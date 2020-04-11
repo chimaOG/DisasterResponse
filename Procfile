@@ -1,1 +1,1 @@
-web: gunicorn DataResponsePipeline:app
+web: gunicorn DisasterMSG:app
