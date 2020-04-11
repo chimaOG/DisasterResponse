@@ -23,6 +23,7 @@ def tokenize(text):
 
     return clean_tokens
 
+
 # load data
 engine = create_engine('sqlite:///Data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterMessages', engine)
@@ -112,7 +113,18 @@ def go():
 
 
 def main():
-    app.run(host='0.0.0.0', port=3001, debug=True)
+    #app.run(host='0.0.0.0', port=3001, debug=True)
+    
+def tokenize(text):
+    tokens = word_tokenize(text)
+    lemmatizer = WordNetLemmatizer()
+
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+
+    return clean_tokens
 
 
 if __name__ == '__main__':
