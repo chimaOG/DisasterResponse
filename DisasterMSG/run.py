@@ -1,6 +1,7 @@
 import json
 import plotly
 import pandas as pd
+from DisasterMSG.tokenize import tokenize
 
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
