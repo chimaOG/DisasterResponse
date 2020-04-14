@@ -50,8 +50,16 @@ like normalization, lemmatization and tokenizing before using the data to train 
 The model was optimized using gridsearch and was stored in a pickle file. The process of training the model was
 carried out using the train_classifier.py file. 
 
-The data used in this project was gotten from Figure Eight.
+The data used in this project was provided by Figure Eight.
 
+##Running ETL Scripy
+1) Clone the repository
+2) cd into the data folder
+3) Run the following command: 'python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db'
+
+##Building the Classifier Model
+1) Clone the repository
+2) cd into the models folder
 
 ##Hosting the webapp locally 
 
