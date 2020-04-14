@@ -60,12 +60,13 @@ The data used in this project was provided by Figure Eight.
 ##Building the Classifier Model
 1) Clone the repository
 2) cd into the models folder
+3) Run the following command: 'python train_classifier.py ../Data/DisasterResponse.db classifier.pkl'
 
 ##Hosting the webapp locally 
 
 To host the app on your local machine:
 1) Clone this reository
 2) cd into the DisasterMSG folder 
-3) run the command 'python run.py'
+3) run the following command: 'python run.py'
 
 Ensure that all the libraries specified above are installed to prevent errors.
